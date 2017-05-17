@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="furgala">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>40</y>
+      <x>300</x>
+      <y>160</y>
       <width>31</width>
       <height>31</height>
      </rect>
