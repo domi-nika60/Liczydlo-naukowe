@@ -9,4 +9,6 @@ Funkcjonalność:
   *rysowanie wykresów funkcji
   
 Środowisko : C++
+Biblioteka : Qt
+IDE        : Qt creator
   
