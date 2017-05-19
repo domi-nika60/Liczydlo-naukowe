@@ -15,9 +15,14 @@
 ========================18.05.2017========================
 -dalsza nuka qt
   +stworzenie wlasnego projektu i testy roznych funkcji, ktore moga zostac zaimplementowane
-  +tworzenie przyciyskow
+  +tworzenie przyciskow (wiersz3)
   +sygnaly, sloty
   +przypisywanie klawiszom funkcji
 -dodanie swoich przyciskow
 -rozpoczecie kursow CSS, ktore pomogly by w dodaniu kolorow i ksztaltow projektowi
+==========================================================
+========================19.05.2017========================
+-dalsza nuka qt
+-dodanie przyciskow clear i backspace
+-dopasowanie wygladu aplikacji do projektu zaproponowanego przez Dominike
 ==========================================================
