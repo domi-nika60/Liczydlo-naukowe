@@ -1,4 +1,4 @@
-11,05,2017 (czwartek):
+﻿11,05,2017 (czwartek):
   - stworzenie repozytorium w systemie GIT
   - scalenie grupy na stronie Trello, stworzenie tablicy (milestone1) z zadaniami na pierwszy tydzien (pierwszy SPRINT)
   
@@ -21,3 +21,7 @@
    *udostępnienie wizualizacji projektu innym członkom team'u
    *testowanie 
    *przygotownaie się do stweorzenia swoojego przydziału przycisków, kurs internetowy QT
+
+21,05,2017
+	* dodanie swojego przydziału przycisków do projetku liczydała
+	* nauka systemu slotów i sygnałów QT oraz języka C++
