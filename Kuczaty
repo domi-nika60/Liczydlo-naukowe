@@ -22,4 +22,10 @@
     2h czytanie Jezyk C++ Praty
     
     2.Zapoznanie się z systemem sygnałów i slotów w QT, oraz intrfejsem graficznym do tego przewidzianym
+
+21.05.2017
+    1.Przerobienie kursu sygnałów i slotów w QT
+    próba zaprogramowania przycisku zakończona błędem kompilacji
+    
+    2.Zaprogramowanie przycisków i podstawowych zadań dla przydzielonych przycisków
     
