@@ -6,17 +6,18 @@
 #include <vector>
 
 class expression
-{
-  double current_value; //moze obliczac na biezaco?
-  QString exp;
-
-  std::vector <QString> log; //historia, kiedys mozna ;)
-  const char operators[];
+{ 
+  QString exp;                              //cale wyrazenie
+  QString number;                           //obecnie wczytwana liczba
+  std::vector <double> numbers;             //liczby
+  std::vector <char> operators;             //operatory
+  double answer;                            //wynik poprzedniego
+  const char def_operators[];               //definuje mozliwe dzialania
 public:
-  expression();
-  expression &operator+=(const QString c); //dodawanie cos jak w klasie string
-  QString display(); //zwraca cale wyrazenie
-  double result(); //wywolane wcisnieciem =
+  expression();                             //konstruktor
+  expression &operator+=(const QString c);  //dodawanie kolejnych, jak w klasie string
+  QString display();                        //zwraca cale wyrazenie
+  double result();                          //liczenie wartosci
 };
 
 #endif

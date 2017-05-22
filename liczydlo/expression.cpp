@@ -1,9 +1,9 @@
 #include "expression.h"
 
 expression::expression()
-: operators{'+', '-', '*', '/'}
+: def_operators{'+', '-', '*', '/'}
 {
-  current_value = 0;
+
 }
 
 expression &expression::operator+=(const QString c)
