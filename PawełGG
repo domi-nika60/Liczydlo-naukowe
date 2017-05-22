@@ -26,3 +26,12 @@
 -dodanie przyciskow clear i backspace
 -dopasowanie wygladu aplikacji do projektu zaproponowanego przez Dominike
 ==========================================================
+========================22.05.2017========================
+-dalsza nuka qt
+-dodanie branch przyciski
+  -klasa expression
+    -header
+     -definicje kilku funkcji
+  -zaprogramowanie przyciskow 1-9, +, = 
+  -operacja dodawania (narazie tylko 2 elementy)
+==========================================================
