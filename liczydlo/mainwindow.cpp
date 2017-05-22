@@ -19,6 +19,10 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->c7, SIGNAL(released()), this, SLOT(digit_pressed()));
     connect(ui->c8, SIGNAL(released()), this, SLOT(digit_pressed()));
     connect(ui->c9, SIGNAL(released()), this, SLOT(digit_pressed()));
+
+    connect(ui->add, SIGNAL(released()), this, SLOT(binary_operator()));
+
+    connect(ui->equal, SIGNAL(released()), this, SLOT(equals()));
 }
 
 MainWindow::~MainWindow()
@@ -34,10 +38,18 @@ void MainWindow::digit_pressed()
     ui->label->setText(e.display());
 }
 
-/*
-QString newLabel;
-double labelNumber;
+void MainWindow::binary_operator()
+{
+    QPushButton * button = (QPushButton*) sender();
+    if (button->text() == "+")
+        e.binary('+');
 
-labelNumber = (ui->label->text() + button->text()).toDouble();
-newLabel = QString::number(labelNumber, 'g', 15);
-*/
+    ui->label->setText(0);
+}
+
+void MainWindow::equals()
+{
+    ui->label->setText(QString::number(e.result(), 'g', 15));
+}
+
+

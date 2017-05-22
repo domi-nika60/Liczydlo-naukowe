@@ -22,6 +22,8 @@ private:
 
 private slots:
     void digit_pressed();
+    void binary_operator();
+    void equals();
 };
 
 #endif // MAINWINDOW_H

@@ -18,6 +18,7 @@ public:
   expression &operator+=(const QString c);  //dodawanie kolejnych, jak w klasie string
   QString display();                        //zwraca cale wyrazenie
   double result();                          //liczenie wartosci
+  void binary(char oper);                   //operatory przyjmujace 2 arg
 };
 
 #endif
