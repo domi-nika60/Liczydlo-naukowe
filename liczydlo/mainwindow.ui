@@ -243,7 +243,7 @@
      <x>0</x>
      <y>0</y>
      <width>510</width>
-     <height>19</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuliczydlo">
@@ -322,6 +322,54 @@
     <hint type="destinationlabel">
      <x>270</x>
      <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>c4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>digit_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>118</x>
+     <y>222</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>245</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>c5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>digit_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>223</x>
+     <y>218</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>229</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>c6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>digit_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>326</x>
+     <y>212</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>320</x>
+     <y>192</y>
     </hint>
    </hints>
   </connection>

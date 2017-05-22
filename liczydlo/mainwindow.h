@@ -25,6 +25,8 @@ private slots:
     void digit_clicked();
     void on_divide_clicked();
 
+    void on_multiply_clicked();
+
 private:
     Ui::MainWindow *ui;
     bool waitForOperand;
