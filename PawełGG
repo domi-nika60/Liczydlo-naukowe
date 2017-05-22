@@ -31,7 +31,8 @@
 -dodanie branch przyciski
   -klasa expression
     -header
-     -definicje kilku funkcji
+    -definicje kilku funkcji
   -zaprogramowanie przyciskow 1-9, +, = 
   -operacja dodawania (narazie tylko 2 elementy)
+  -zmiana kilku elementow ui
 ==========================================================
