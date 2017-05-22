@@ -51,3 +51,14 @@ void MainWindow::on_divide_clicked()
     ui->display->setText(QString::number(sum,'g',7));
     waitForOperand=1;
 }
+
+void MainWindow::on_multiply_clicked()
+{
+    if(sum==0){
+        sum=ui->display->text().toDouble();
+    }
+    else
+        sum*=ui->display->text().toDouble();
+    ui->display->setText(QString::number(sum,'g',7));
+    waitForOperand=1;
+}
