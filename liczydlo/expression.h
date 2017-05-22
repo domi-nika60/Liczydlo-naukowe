@@ -7,7 +7,7 @@
 
 class expression
 { 
-  QString exp;                              //cale wyrazenie
+  //QString exp;                              //cale wyrazenie
   QString number;                           //obecnie wczytwana liczba
   std::vector <double> numbers;             //liczby
   std::vector <char> operators;             //operatory

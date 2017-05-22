@@ -3,17 +3,16 @@
 expression::expression()
 : def_operators{'+', '-', '*', '/'}
 {
-    numbers.push_back(0);
+
 }
 
 expression &expression::operator+=(const QString c)
 {
-    exp += c;
-
+    number = QString::number(c.toDouble(), 'g', 15);
     return *this;
 }
 
 QString expression::display()
 {
-    return exp;
+    return number;
 }
