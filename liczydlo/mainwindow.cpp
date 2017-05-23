@@ -87,6 +87,18 @@ void MainWindow::two_argument_clicked(){
 
 };
 
+void MainWindow::on_multiply_clicked()
+{   //do poprawy jak wyżej
+    /*
+    if(sum==0){
+        sum=ui->display->text().toDouble();
+    }
+    else
+        sum*=ui->display->text().toDouble();
+    ui->display->setText(QString::number(sum,'g',7));
+    waitForOperand=1;
+    */
+}
 
 
 void MainWindow::on_change_charakter_clicked()
