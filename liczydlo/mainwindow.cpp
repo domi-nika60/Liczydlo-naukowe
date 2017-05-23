@@ -73,6 +73,10 @@ void MainWindow::two_argument_clicked(){
         ui->display->setText(QString::number(sum,'g',7));
         operation=button->property("type").toInt();
 
+        if(operation==5){
+            waitForOperand=0;
+        }
+
     }else{
         sum=ui->display->text().toDouble();
         operation=button->property("type").toInt();
@@ -90,7 +94,7 @@ void MainWindow::on_change_charakter_clicked()
 
     sum=(-1)*ui->display->text().toDouble();
     ui->display->setText(QString::number(sum,'g',7));
-    waitForOperand=1;
+    //waitForOperand=1; chyba nie potrzebne
 
 }
 
