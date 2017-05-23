@@ -177,7 +177,7 @@
      <item row="1" column="4">
       <widget class="QPushButton" name="multiply">
        <property name="text">
-        <string>x</string>
+        <string>*</string>
        </property>
       </widget>
      </item>
