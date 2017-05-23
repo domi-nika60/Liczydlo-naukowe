@@ -69,7 +69,7 @@ void MainWindow::two_argument_clicked(){
         }
         waitForOperand=1;
         ui->display->setText(QString::number(sum,'g',7));
-        operation=ui->display->property("type").toInt();
+        operation=button->property("type").toInt();
 
     }else{
         sum=ui->display->text().toDouble();
