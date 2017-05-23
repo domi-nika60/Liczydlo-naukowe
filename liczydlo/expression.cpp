@@ -3,7 +3,7 @@
 expression::expression()
 : def_operators{'+', '-', '*', '/'}
 {
-
+    answer = 0;
 }
 
 expression &expression::operator+=(const QString c)
@@ -21,7 +21,7 @@ void expression::binary(char oper)
 {
     switch (oper) {
     case '+':
-        operators.push_back(oper);
+        operators.insert(operators.begin(), oper);
         break;
     default:
         break;
@@ -34,9 +34,20 @@ double expression::result()
 {
     numbers.push_back(number.toDouble());
     number.clear();
-    //while (operators.size() > 0)
+    char oper;
+    while (!operators.empty() && numbers.size() >= 2)
     {
-
+           oper = operators.back();
+           operators.pop_back();
+           switch (oper) {
+           case '+':
+               numbers[0] += numbers[1];
+               numbers.erase(numbers.begin()+1);
+               break;
+           default:
+               break;
+           }
     }
-    return numbers[0] + numbers[1];
+    answer = numbers [0];
+    return answer;
 }
