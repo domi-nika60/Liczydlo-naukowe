@@ -23,6 +23,7 @@ private slots:
     void on_c7_clicked();
 
     void digit_clicked();
+    void two_argument_clicked();
     void on_divide_clicked();
 
     void on_multiply_clicked();
@@ -31,6 +32,7 @@ private:
     Ui::MainWindow *ui;
     bool waitForOperand;
     double sum;
+    int operation;
 };
 
 #endif // MAINWINDOW_H
