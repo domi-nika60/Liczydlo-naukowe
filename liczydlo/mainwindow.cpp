@@ -19,6 +19,7 @@ void MainWindow::on_mc_clicked()
 {
     ui->display->clear();
     sum=0;
+    operation=0;
     //kasowanie pamieci etc etd
 }
 
@@ -75,21 +76,26 @@ void MainWindow::two_argument_clicked(){
 
         if(operation==5){
             waitForOperand=0;
+            operation=0;
         }
 
     }else{
         sum=ui->display->text().toDouble();
         operation=button->property("type").toInt();
         waitForOperand=1;
+        if(operation==5){
+            sum=0;
+            waitForOperand=0;
+            operation=0;
+        }
     }
 
 
 
 };
 
-void MainWindow::on_multiply_clicked()
+/*void MainWindow::on_multiply_clicked()
 {   //do poprawy jak wyżej
-    /*
     if(sum==0){
         sum=ui->display->text().toDouble();
     }
@@ -97,8 +103,9 @@ void MainWindow::on_multiply_clicked()
         sum*=ui->display->text().toDouble();
     ui->display->setText(QString::number(sum,'g',7));
     waitForOperand=1;
-    */
-}
+
+}*/
+
 
 
 void MainWindow::on_change_charakter_clicked()
