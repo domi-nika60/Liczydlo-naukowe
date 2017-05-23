@@ -7,6 +7,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
     sum=0;
+    operation=0;
 }
 
 MainWindow::~MainWindow()
@@ -43,17 +44,45 @@ void MainWindow::digit_clicked(){
 
 void MainWindow::on_divide_clicked()
 {
-    if(sum==0){
-        sum=ui->display->text().toDouble();
-    }
-    else
-        sum/=ui->display->text().toDouble();
-    ui->display->setText(QString::number(sum,'g',7));
-    waitForOperand=1;
+
 }
 
+void MainWindow::two_argument_clicked(){
+
+    QPushButton* button = qobject_cast<QPushButton*>(sender());
+    QString what=button->text();
+    //double wynik;
+
+    if(operation!=0){
+        switch(operation){
+            case 1: //dodawanie
+                sum=sum+ui->display->text().toDouble();
+            break;
+            case 2: //odejmowanie
+            break;
+        case 3: //mnożenie
+            break;
+        case 4: //dzielenie
+            sum=sum/ui->display->text().toDouble();
+
+            break;
+        }
+        waitForOperand=1;
+        ui->display->setText(QString::number(sum,'g',7));
+        operation=ui->display->property("type").toInt();
+
+    }else{
+        sum=ui->display->text().toDouble();
+        operation=button->property("type").toInt();
+        waitForOperand=1;
+    }
+
+
+
+};
+
 void MainWindow::on_multiply_clicked()
-{
+{   //do poprawy jak wyżej
     if(sum==0){
         sum=ui->display->text().toDouble();
     }
