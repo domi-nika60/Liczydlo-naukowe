@@ -103,3 +103,8 @@ void MainWindow::on_change_charakter_clicked()
     waitForOperand=1;
 
 }
+
+void MainWindow::on_clearAll_clicked()
+{
+    ui->display->clear();
+}

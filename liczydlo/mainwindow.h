@@ -30,6 +30,8 @@ private slots:
 
     void on_change_charakter_clicked();
 
+    void on_clearAll_clicked();
+
 private:
     Ui::MainWindow *ui;
     bool waitForOperand;
