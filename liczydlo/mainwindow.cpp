@@ -101,7 +101,6 @@ void MainWindow::on_multiply_clicked()
 }
 
 
-
 void MainWindow::on_change_charakter_clicked()
 {
 
