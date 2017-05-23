@@ -23,6 +23,9 @@ void expression::binary(char oper)
     case '+':
         operators.insert(operators.begin(), oper);
         break;
+    case '-':
+        operators.insert(operators.begin(), oper);
+        break;
     default:
         break;
     }
@@ -42,6 +45,10 @@ double expression::result()
            switch (oper) {
            case '+':
                numbers[0] += numbers[1];
+               numbers.erase(numbers.begin()+1);
+               break;
+           case '-':
+               numbers[0] -= numbers[1];
                numbers.erase(numbers.begin()+1);
                break;
            default:

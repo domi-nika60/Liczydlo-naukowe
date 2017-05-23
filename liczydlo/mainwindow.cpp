@@ -21,6 +21,7 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->c9, SIGNAL(released()), this, SLOT(digit_pressed()));
 
     connect(ui->add, SIGNAL(released()), this, SLOT(binary_operator()));
+    connect(ui->subtract, SIGNAL(released()), this, SLOT(binary_operator()));
 
     connect(ui->equal, SIGNAL(released()), this, SLOT(equals()));
 }
@@ -43,6 +44,9 @@ void MainWindow::binary_operator()
     QPushButton * button = (QPushButton*) sender();
     if (button->text() == "+")
         e.binary('+');
+    else if (button->text() == "-")
+        e.binary('-');
+
 
     ui->label->setText(0);
 }
