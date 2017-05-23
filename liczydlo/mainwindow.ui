@@ -86,7 +86,7 @@
      <item row="0" column="4">
       <widget class="QPushButton" name="divide">
        <property name="text">
-        <string>	÷</string>
+        <string>/</string>
        </property>
       </widget>
      </item>
