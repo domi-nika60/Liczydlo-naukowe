@@ -98,8 +98,7 @@ void MainWindow::on_multiply_clicked()
 void MainWindow::on_change_charakter_clicked()
 {
 
-    sum=ui->display->text().toDouble();
-    sum=(-1)*sum;
+    sum=(-1)*ui->display->text().toDouble();
     ui->display->setText(QString::number(sum,'g',7));
     waitForOperand=1;
 
