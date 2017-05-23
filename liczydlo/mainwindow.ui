@@ -688,6 +688,22 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>multiply</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>two_argument_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>269</x>
+     <y>220</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>305</x>
+     <y>182</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>digit_clicked()</slot>

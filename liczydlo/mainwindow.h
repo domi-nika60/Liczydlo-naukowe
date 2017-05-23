@@ -26,8 +26,6 @@ private slots:
     void two_argument_clicked();
     void on_divide_clicked();
 
-    void on_multiply_clicked();
-
     void on_change_charakter_clicked();
 
     void on_clearAll_clicked();

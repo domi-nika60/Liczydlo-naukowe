@@ -62,6 +62,7 @@ void MainWindow::two_argument_clicked(){
                 sum=sum-ui->display->text().toDouble();
             break;
         case 3: //mnożenie
+                sum=sum*ui->display->text().toDouble();
             break;
         case 4: //dzielenie
             sum=sum/ui->display->text().toDouble();
@@ -81,17 +82,6 @@ void MainWindow::two_argument_clicked(){
 
 
 };
-
-void MainWindow::on_multiply_clicked()
-{   //do poprawy jak wyżej
-    if(sum==0){
-        sum=ui->display->text().toDouble();
-    }
-    else
-        sum*=ui->display->text().toDouble();
-    ui->display->setText(QString::number(sum,'g',7));
-    waitForOperand=1;
-}
 
 
 
