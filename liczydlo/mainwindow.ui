@@ -417,7 +417,7 @@
      <x>0</x>
      <y>0</y>
      <width>400</width>
-     <height>21</height>
+     <height>19</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuliczydlo">
@@ -688,22 +688,6 @@
     <hint type="destinationlabel">
      <x>267</x>
      <y>389</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>multiply</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>two_argument_clicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>249</x>
-     <y>219</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>156</x>
-     <y>188</y>
     </hint>
    </hints>
   </connection>
