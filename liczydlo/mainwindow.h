@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <math.h>
 
 namespace Ui {
 class MainWindow;
@@ -30,7 +31,7 @@ private slots:
 
     void on_clearAll_clicked();
 
-    void on_pushButton_clicked();
+    void on_kwadrat_oblicz_clicked();
 
 private:
     Ui::MainWindow *ui;

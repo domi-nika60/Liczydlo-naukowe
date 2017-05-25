@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -109,9 +110,18 @@ void MainWindow::on_clearAll_clicked()
     ui->display->clear();
 }
 
-void MainWindow::on_pushButton_clicked()
+
+void MainWindow::on_kwadrat_oblicz_clicked()
 {
     double a=ui->kwadrat_a->text().toDouble();
+    double b=ui->kwadrat_b->text().toDouble();
+    double c=ui->kwadrat_c->text().toDouble();
+    double delta;
+    delta=b*b-4*a*c;
 
-    ui->kwadrat_x1->setText(QString::number(a,'g',7));
+    double x1 = (-b-sqrt(delta))/2*a;
+    double x2 = (-b+sqrt(delta))/2*a;
+
+    ui->kwadrat_x1->setText(QString::number(x1,'g',7));
+    ui->kwadrat_x2->setText(QString::number(x2,'g',7));
 }

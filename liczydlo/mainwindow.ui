@@ -65,9 +65,9 @@
     <property name="movable">
      <bool>false</bool>
     </property>
-    <widget class="QWidget" name="tab">
+    <widget class="QWidget" name="calc">
      <attribute name="title">
-      <string>Tab 1</string>
+      <string>calc</string>
      </attribute>
      <widget class="QWidget" name="gridLayoutWidget_2">
       <property name="geometry">
@@ -451,9 +451,9 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_2">
+    <widget class="QWidget" name="tab2">
      <attribute name="title">
-      <string>Tab 2</string>
+      <string>równania kw.</string>
      </attribute>
      <widget class="QLineEdit" name="kwadrat_a">
       <property name="geometry">
@@ -475,7 +475,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_3">
+     <widget class="QLineEdit" name="kwadrat_c">
       <property name="geometry">
        <rect>
         <x>270</x>
@@ -485,7 +485,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="kwadrat_oblicz">
       <property name="geometry">
        <rect>
         <x>300</x>
@@ -495,20 +495,20 @@
        </rect>
       </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>Oblicz</string>
       </property>
      </widget>
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>50</x>
         <y>0</y>
-        <width>71</width>
-        <height>31</height>
+        <width>21</width>
+        <height>21</height>
        </rect>
       </property>
       <property name="text">
-       <string>TextLabel</string>
+       <string>a:</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="kwadrat_x1">
@@ -521,7 +521,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_2">
+     <widget class="QLineEdit" name="kwadrat_x2">
       <property name="geometry">
        <rect>
         <x>180</x>
@@ -529,6 +529,58 @@
         <width>113</width>
         <height>20</height>
        </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>0</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>b:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>0</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>c:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>80</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>x1:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>80</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>x2:</string>
       </property>
      </widget>
     </widget>
@@ -540,66 +592,34 @@
  <resources/>
  <connections>
   <connection>
-   <sender>c7</sender>
+   <sender>c0</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>digit_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>106</x>
-     <y>184</y>
+     <x>136</x>
+     <y>358</y>
     </hint>
     <hint type="destinationlabel">
-     <x>79</x>
-     <y>472</y>
+     <x>128</x>
+     <y>529</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>c8</sender>
+   <sender>divide</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>digit_clicked()</slot>
+   <slot>two_argument_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>192</x>
-     <y>185</y>
+     <x>309</x>
+     <y>180</y>
     </hint>
     <hint type="destinationlabel">
-     <x>126</x>
-     <y>474</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>c9</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>digit_clicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>265</x>
-     <y>183</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>290</x>
-     <y>445</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>c4</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>digit_clicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>118</x>
-     <y>243</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>109</x>
-     <y>486</y>
+     <x>489</x>
+     <y>155</y>
     </hint>
    </hints>
   </connection>
@@ -620,34 +640,34 @@
    </hints>
   </connection>
   <connection>
-   <sender>c6</sender>
+   <sender>multiply</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>digit_clicked()</slot>
+   <slot>two_argument_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>262</x>
-     <y>250</y>
+     <x>326</x>
+     <y>239</y>
     </hint>
     <hint type="destinationlabel">
-     <x>230</x>
-     <y>480</y>
+     <x>509</x>
+     <y>207</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>c1</sender>
+   <sender>c4</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>digit_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>128</x>
-     <y>296</y>
+     <x>118</x>
+     <y>243</y>
     </hint>
     <hint type="destinationlabel">
-     <x>122</x>
-     <y>455</y>
+     <x>109</x>
+     <y>486</y>
     </hint>
    </hints>
   </connection>
@@ -684,50 +704,82 @@
    </hints>
   </connection>
   <connection>
-   <sender>c0</sender>
+   <sender>c8</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>digit_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>136</x>
-     <y>358</y>
+     <x>192</x>
+     <y>185</y>
     </hint>
     <hint type="destinationlabel">
+     <x>126</x>
+     <y>474</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>c9</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>digit_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>265</x>
+     <y>183</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>290</x>
+     <y>445</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>c6</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>digit_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>262</x>
+     <y>250</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>230</x>
+     <y>480</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>c1</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>digit_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
      <x>128</x>
-     <y>529</y>
+     <y>296</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>122</x>
+     <y>455</y>
     </hint>
    </hints>
   </connection>
   <connection>
-   <sender>divide</sender>
+   <sender>c7</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
-   <slot>two_argument_clicked()</slot>
+   <slot>digit_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>309</x>
-     <y>180</y>
+     <x>106</x>
+     <y>184</y>
     </hint>
     <hint type="destinationlabel">
-     <x>489</x>
-     <y>155</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>multiply</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>two_argument_clicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>326</x>
-     <y>239</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>509</x>
-     <y>207</y>
+     <x>79</x>
+     <y>472</y>
     </hint>
    </hints>
   </connection>
@@ -748,22 +800,6 @@
    </hints>
   </connection>
   <connection>
-   <sender>add</sender>
-   <signal>clicked()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>two_argument_clicked()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>327</x>
-     <y>352</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>509</x>
-     <y>292</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
    <sender>equal</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
@@ -776,6 +812,22 @@
     <hint type="destinationlabel">
      <x>459</x>
      <y>346</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>add</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>two_argument_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>327</x>
+     <y>352</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>509</x>
+     <y>292</y>
     </hint>
    </hints>
   </connection>
