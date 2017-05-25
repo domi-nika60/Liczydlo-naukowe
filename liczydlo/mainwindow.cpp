@@ -108,3 +108,10 @@ void MainWindow::on_clearAll_clicked()
 {
     ui->display->clear();
 }
+
+void MainWindow::on_pushButton_clicked()
+{
+    double a=ui->kwadrat_a->text().toDouble();
+
+    ui->kwadrat_x1->setText(QString::number(a,'g',7));
+}
