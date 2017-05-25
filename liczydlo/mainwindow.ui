@@ -406,19 +406,6 @@
          </property>
         </widget>
        </item>
-       <item row="0" column="5">
-        <widget class="QPushButton" name="sqrt">
-         <property name="maximumSize">
-          <size>
-           <width>50</width>
-           <height>40</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>Sqrt</string>
-         </property>
-        </widget>
-       </item>
        <item row="0" column="1">
         <widget class="QPushButton" name="c7">
          <property name="maximumSize">
@@ -429,6 +416,19 @@
          </property>
          <property name="text">
           <string>7</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="5">
+        <widget class="QPushButton" name="sqrt">
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Sqrt</string>
          </property>
         </widget>
        </item>
