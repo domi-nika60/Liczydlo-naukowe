@@ -17,11 +17,36 @@
   *konflikt z Rafałem przy Tworzeniu Layout'u, rozwiązany przez Szymona
  
 18,05,2017
+   *nauka Qt
    *stworzenie projteku graficznego liczydła
    *udostępnienie wizualizacji projektu innym członkom team'u
    *testowanie 
    *przygotownaie się do stweorzenia swoojego przydziału przycisków, kurs internetowy QT
 
 21,05,2017
+	*nauka Qt
 	* dodanie swojego przydziału przycisków do projetku liczydała
 	* nauka systemu slotów i sygnałów QT oraz języka C++
+	
+22,05,2017
+	*nauka Qt
+	*kod obsługi mnożenia w liczydle i przycisków 4,5,6
+	*odnalezienie błędu dotyczącego pamięci liczydła
+	*rozwój umiejętnosci programowania obiektowego C++
+23.05.2017
+	*nauka Qt
+	*uporządkowanie interfejsu liczydła, ustalenie wmiarów przycisków
+24,05,2017
+	*podsumowanie pierwszego sprintu,
+	*tworzenie pierwszej części sprawozdania
+	*plany na kolejny tydzien - dodanie funkcjonalnosci kalkulatora takich 
+	jak liczenie miejsc zerowych równania, rysowanie wykresów
+
+25,05,2017	
+	*nauka Qt i jezyka C++
+	*próby stworzenia nowego widżetu liczącego miejsca zerowe
+	*wstępny projekt i testy kalkulatora liczącego równania kwadratowe (pomyślny)
+26,05,2017	
+	*ulepszenie kalkulatora równan kwadratowych (postac kanoniczna i iloczynowa), obsługa błędów
+	
+	

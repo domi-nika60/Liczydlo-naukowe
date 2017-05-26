@@ -14,3 +14,16 @@
 19.05.2017:
 	- nauka programowania slotów i sygnałów w Qt
 	- czytanie Język C++ Praty (przeciążanie operatorów, deklarowanie przyjaźni). 
+22.05.2017:
+	- programowanie sygnałów i slotów we własnym programie testowym.
+	- zapoznanie się z kodem udostępnionym przez pozostałych członków teamu.
+23.05.2017:
+	- uporządkowanie wyglądu
+	- dodanie działania + i =
+	- dalsza nauka qt
+24.05.2017:
+	- przygotowanie do wykonania swojej części w czasie trwania tego sprintu - rysowanie wykresów funkcji.
+	- stworzenie programu testowego wyświetlającego wykres funkcji y=x^2.
+25.05.2017:
+	- dodanie nowego taba do kalkulatora (stworzenie odpowiednich okien, wygląd graficzny)
+	- nauka Qt - rysowanie wykresów.
