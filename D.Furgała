@@ -36,4 +36,15 @@
 23.05.2017
 	*nauka Qt
 	*uporządkowanie interfejsu liczydła, ustalenie wmiarów przycisków
+24,05,2017
+	*podsumowanie pierwszego sprintu,
+	*tworzenie pierwszej części sprawozdania
+	*plany na kolejny tydzien - dodanie funkcjonalnosci kalkulatora takich 
+	jak liczenie miejsc zerowych równania, rysowanie wykresów
+
+25,05,2017	
+	*nauka Qt i jezyka C++
+	*próby stworzenia nowego widżetu liczącego miejsca zerowe
+	*wstępny projekt i testy kalkulatora liczącego równania kwadratowe (pomyślny)
+	
 	
