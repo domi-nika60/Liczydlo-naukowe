@@ -60,7 +60,7 @@
      </sizepolicy>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <property name="movable">
      <bool>false</bool>
@@ -459,7 +459,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>20</y>
+        <y>50</y>
         <width>113</width>
         <height>20</height>
        </rect>
@@ -469,7 +469,7 @@
       <property name="geometry">
        <rect>
         <x>140</x>
-        <y>20</y>
+        <y>50</y>
         <width>113</width>
         <height>20</height>
        </rect>
@@ -479,7 +479,7 @@
       <property name="geometry">
        <rect>
         <x>270</x>
-        <y>20</y>
+        <y>50</y>
         <width>113</width>
         <height>20</height>
        </rect>
@@ -489,7 +489,7 @@
       <property name="geometry">
        <rect>
         <x>300</x>
-        <y>60</y>
+        <y>80</y>
         <width>75</width>
         <height>23</height>
        </rect>
@@ -502,7 +502,7 @@
       <property name="geometry">
        <rect>
         <x>50</x>
-        <y>0</y>
+        <y>30</y>
         <width>21</width>
         <height>21</height>
        </rect>
@@ -514,8 +514,8 @@
      <widget class="QLineEdit" name="kwadrat_x1">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>100</y>
+        <x>140</x>
+        <y>240</y>
         <width>113</width>
         <height>20</height>
        </rect>
@@ -524,8 +524,8 @@
      <widget class="QLineEdit" name="kwadrat_x2">
       <property name="geometry">
        <rect>
-        <x>180</x>
-        <y>100</y>
+        <x>270</x>
+        <y>240</y>
         <width>113</width>
         <height>20</height>
        </rect>
@@ -535,7 +535,7 @@
       <property name="geometry">
        <rect>
         <x>190</x>
-        <y>0</y>
+        <y>30</y>
         <width>47</width>
         <height>13</height>
        </rect>
@@ -548,7 +548,7 @@
       <property name="geometry">
        <rect>
         <x>320</x>
-        <y>0</y>
+        <y>30</y>
         <width>47</width>
         <height>13</height>
        </rect>
@@ -560,8 +560,8 @@
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>100</x>
-        <y>80</y>
+        <x>160</x>
+        <y>220</y>
         <width>47</width>
         <height>13</height>
        </rect>
@@ -573,14 +573,171 @@
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>220</x>
-        <y>80</y>
+        <x>280</x>
+        <y>220</y>
         <width>47</width>
         <height>13</height>
        </rect>
       </property>
       <property name="text">
        <string>x2:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>10</y>
+        <width>281</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Równanie kwadratowe. Postać ogólna:   ax^2+bx+c=0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>60</x>
+        <y>90</y>
+        <width>211</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Postać kanoniczna:  a(x-p)^2+q=0</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="kwadratkan_a">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>130</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="kwadratkan_p">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>130</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="kwadratkan_q">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>130</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>110</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>a:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>110</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>p:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>110</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>q:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="kwadratkan_oblicz">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>160</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Oblicz</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>190</y>
+        <width>201</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Postać iloczynowa:   a(x-x1)(x-x2)=0</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="kwadratil_a">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>240</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>220</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>a:</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="kwadratil_oblicz">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>270</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Oblicz</string>
       </property>
      </widget>
     </widget>

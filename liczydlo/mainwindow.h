@@ -33,6 +33,10 @@ private slots:
 
     void on_kwadrat_oblicz_clicked();
 
+    void on_kwadratkan_oblicz_clicked();
+
+    void on_kwadratil_oblicz_clicked();
+
 private:
     Ui::MainWindow *ui;
     bool waitForOperand;

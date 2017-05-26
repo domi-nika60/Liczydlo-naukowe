@@ -90,9 +90,6 @@ void MainWindow::two_argument_clicked(){
             operation=0;
         }
     }
-
-
-
 };
 
 
@@ -117,11 +114,69 @@ void MainWindow::on_kwadrat_oblicz_clicked()
     double b=ui->kwadrat_b->text().toDouble();
     double c=ui->kwadrat_c->text().toDouble();
     double delta;
-    delta=b*b-4*a*c;
+    double p;
+    double q;
+    double x1;
+    double x2;
+    if (a==0){
+        x1=(-c)/b;
+        x2=0;
+        p=0;
+        q=0;
+    }
+    else if (b==0){
+        x1=sqrt((-c)/a);
+        x2=(-sqrt((-c)/a));
+        p=0;
+        q=c;
+    }
+    else if (c==0){
+        x2=0;
+        x1=(-b)/a;
+        p=(-b)/2*a;
+        q=(-(b*b-4*a*c))/(4*a);
+    }
 
-    double x1 = (-b-sqrt(delta))/2*a;
-    double x2 = (-b+sqrt(delta))/2*a;
+    else {
+        delta=b*b-4*a*c;
+        if (delta==0){
+            x1=(-b)/2*a;
+            x2=x1;
+            p=(-b)/2*a;
+            q=0;
+        }
+        if (delta<0){
+            x1=0;
+            x2=0;
+            p=(-b)/2*a;
+            q=(-(b*b-4*a*c))/(4*a);
+        }
+        else {
+            x1 = ((-b)-sqrt(delta))/2*a;
+            x2 = ((-b)+sqrt(delta))/2*a;
+            p=(-b)/2*a;
+            q=(-(b*b-4*a*c))/(4*a);
+        }
+    }
 
     ui->kwadrat_x1->setText(QString::number(x1,'g',7));
     ui->kwadrat_x2->setText(QString::number(x2,'g',7));
+    ui->kwadratkan_p->setText(QString::number(p,'g',7));
+    ui->kwadratkan_q->setText(QString::number(q,'g',7));
+    ui->kwadratkan_a->setText(QString::number(a,'g',7));
+    ui->kwadratil_a->setText(QString::number(a,'g',7));
+}
+
+void MainWindow::on_kwadratkan_oblicz_clicked()
+{
+    /*double a=ui->kwadratkan_a->text().toDouble();
+    double p=ui->kwadratkan_p->text().toDouble();
+    double q=ui->kwadratkan_q->text().toDouble();
+
+*/
+}
+
+void MainWindow::on_kwadratil_oblicz_clicked()
+{
+
 }
