@@ -17,11 +17,23 @@
   *konflikt z Rafałem przy Tworzeniu Layout'u, rozwiązany przez Szymona
  
 18,05,2017
+   *nauka Qt
    *stworzenie projteku graficznego liczydła
    *udostępnienie wizualizacji projektu innym członkom team'u
    *testowanie 
    *przygotownaie się do stweorzenia swoojego przydziału przycisków, kurs internetowy QT
 
 21,05,2017
+	*nauka Qt
 	* dodanie swojego przydziału przycisków do projetku liczydała
 	* nauka systemu slotów i sygnałów QT oraz języka C++
+	
+22,05,2017
+	*nauka Qt
+	*kod obsługi mnożenia w liczydle i przycisków 4,5,6
+	*odnalezienie błędu dotyczącego pamięci liczydła
+	*rozwój umiejętnosci programowania obiektowego C++
+23.05.2017
+	*nauka Qt
+	*uporządkowanie interfejsu liczydła, ustalenie wmiarów przycisków
+	

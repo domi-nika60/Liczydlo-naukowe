@@ -13,7 +13,7 @@
 -upload klasy wector i prototypów jej metod oraz funkcji zaprzyjaźnionych
 ==========================================================
 ========================18.05.2017========================
--dalsza nuka qt
+-dalsza nauka qt
   +stworzenie wlasnego projektu i testy roznych funkcji, ktore moga zostac zaimplementowane
   +tworzenie przyciskow (wiersz3)
   +sygnaly, sloty
@@ -22,7 +22,24 @@
 -rozpoczecie kursow CSS, ktore pomogly by w dodaniu kolorow i ksztaltow projektowi
 ==========================================================
 ========================19.05.2017========================
--dalsza nuka qt
+-dalsza nauka qt
 -dodanie przyciskow clear i backspace
 -dopasowanie wygladu aplikacji do projektu zaproponowanego przez Dominike
+==========================================================
+========================22.05.2017========================
+-dalsza nauka qt
+-dodanie branch przyciski
+  -klasa expression
+    -header
+    -definicje kilku funkcji
+  -zaprogramowanie przyciskow 1-9, +, = 
+  -operacja dodawania (narazie tylko 2 elementy)
+  -zmiana kilku elementow ui
+==========================================================
+========================23.05.2017========================
+-dalsza nauka qt
+-rozwiniecie klasy expression
+  -dzialania +,-,*,/
+  -kolejnosc wykonywania dzialac (test 2+2*2 zaliczony)
+-drobne zmiany w interfejsie
 ==========================================================
