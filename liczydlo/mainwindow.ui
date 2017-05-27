@@ -47,8 +47,8 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>2</x>
-      <y>2</y>
+      <x>0</x>
+      <y>0</y>
       <width>399</width>
       <height>400</height>
      </rect>
@@ -60,7 +60,7 @@
      </sizepolicy>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <property name="movable">
      <bool>false</bool>
@@ -458,11 +458,17 @@
      <widget class="QLineEdit" name="kwadrat_a">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>15</x>
         <y>50</y>
-        <width>113</width>
+        <width>80</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>20</height>
+       </size>
       </property>
      </widget>
      <widget class="QLineEdit" name="kwadrat_b">
@@ -470,19 +476,31 @@
        <rect>
         <x>140</x>
         <y>50</y>
-        <width>113</width>
+        <width>80</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>20</height>
+       </size>
       </property>
      </widget>
      <widget class="QLineEdit" name="kwadrat_c">
       <property name="geometry">
        <rect>
-        <x>270</x>
+        <x>265</x>
         <y>50</y>
-        <width>113</width>
+        <width>80</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>20</height>
+       </size>
       </property>
      </widget>
      <widget class="QPushButton" name="kwadrat_oblicz">
@@ -501,7 +519,7 @@
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>45</x>
         <y>30</y>
         <width>21</width>
         <height>21</height>
@@ -515,29 +533,41 @@
       <property name="geometry">
        <rect>
         <x>140</x>
-        <y>240</y>
-        <width>113</width>
+        <y>210</y>
+        <width>80</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>20</height>
+       </size>
       </property>
      </widget>
      <widget class="QLineEdit" name="kwadrat_x2">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>240</y>
-        <width>113</width>
+        <x>265</x>
+        <y>210</y>
+        <width>80</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>20</height>
+       </size>
       </property>
      </widget>
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>190</x>
+        <x>170</x>
         <y>30</y>
         <width>47</width>
-        <height>13</height>
+        <height>21</height>
        </rect>
       </property>
       <property name="text">
@@ -547,10 +577,10 @@
      <widget class="QLabel" name="label_3">
       <property name="geometry">
        <rect>
-        <x>320</x>
+        <x>295</x>
         <y>30</y>
         <width>47</width>
-        <height>13</height>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
@@ -560,10 +590,10 @@
      <widget class="QLabel" name="label_4">
       <property name="geometry">
        <rect>
-        <x>160</x>
-        <y>220</y>
+        <x>170</x>
+        <y>190</y>
         <width>47</width>
-        <height>13</height>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
@@ -573,10 +603,10 @@
      <widget class="QLabel" name="label_5">
       <property name="geometry">
        <rect>
-        <x>280</x>
-        <y>220</y>
+        <x>295</x>
+        <y>190</y>
         <width>47</width>
-        <height>13</height>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
@@ -599,7 +629,7 @@
      <widget class="QLabel" name="label_7">
       <property name="geometry">
        <rect>
-        <x>60</x>
+        <x>50</x>
         <y>90</y>
         <width>211</width>
         <height>20</height>
@@ -612,11 +642,17 @@
      <widget class="QLineEdit" name="kwadratkan_a">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>15</x>
         <y>130</y>
-        <width>113</width>
+        <width>80</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>20</height>
+       </size>
       </property>
      </widget>
      <widget class="QLineEdit" name="kwadratkan_p">
@@ -624,28 +660,40 @@
        <rect>
         <x>140</x>
         <y>130</y>
-        <width>113</width>
+        <width>80</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>20</height>
+       </size>
       </property>
      </widget>
      <widget class="QLineEdit" name="kwadratkan_q">
       <property name="geometry">
        <rect>
-        <x>270</x>
+        <x>265</x>
         <y>130</y>
-        <width>113</width>
+        <width>80</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>20</height>
+       </size>
       </property>
      </widget>
      <widget class="QLabel" name="label_8">
       <property name="geometry">
        <rect>
-        <x>50</x>
+        <x>45</x>
         <y>110</y>
         <width>47</width>
-        <height>13</height>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
@@ -655,10 +703,10 @@
      <widget class="QLabel" name="label_9">
       <property name="geometry">
        <rect>
-        <x>180</x>
+        <x>170</x>
         <y>110</y>
         <width>47</width>
-        <height>13</height>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
@@ -668,10 +716,10 @@
      <widget class="QLabel" name="label_10">
       <property name="geometry">
        <rect>
-        <x>310</x>
+        <x>295</x>
         <y>110</y>
         <width>47</width>
-        <height>13</height>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
@@ -695,7 +743,7 @@
       <property name="geometry">
        <rect>
         <x>50</x>
-        <y>190</y>
+        <y>170</y>
         <width>201</width>
         <height>16</height>
        </rect>
@@ -707,20 +755,26 @@
      <widget class="QLineEdit" name="kwadratil_a">
       <property name="geometry">
        <rect>
-        <x>10</x>
-        <y>240</y>
-        <width>113</width>
+        <x>15</x>
+        <y>210</y>
+        <width>80</width>
         <height>20</height>
        </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>80</width>
+        <height>20</height>
+       </size>
       </property>
      </widget>
      <widget class="QLabel" name="label_12">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>220</y>
+        <x>45</x>
+        <y>190</y>
         <width>47</width>
-        <height>13</height>
+        <height>16</height>
        </rect>
       </property>
       <property name="text">
@@ -731,7 +785,7 @@
       <property name="geometry">
        <rect>
         <x>300</x>
-        <y>270</y>
+        <y>240</y>
         <width>75</width>
         <height>23</height>
        </rect>

@@ -133,27 +133,27 @@ void MainWindow::on_kwadrat_oblicz_clicked()
     else if (c==0){
         x2=0;
         x1=(-b)/a;
-        p=(-b)/2*a;
-        q=(-(b*b-4*a*c))/(4*a);
+        p=(-b)/(2*a);
+        q=(-((b*b)-(4*a*c)))/(4*a);
     }
 
     else {
-        delta=b*b-4*a*c;
+        delta=(b*b)-(4*a*c);
         if (delta==0){
-            x1=(-b)/2*a;
+            x1=(-b)/(2*a);
             x2=x1;
-            p=(-b)/2*a;
+            p=(-b)/(2*a);
             q=0;
         }
         if (delta<0){
             x1=0;
             x2=0;
-            p=(-b)/2*a;
+            p=(-b)/(2*a);
             q=(-(b*b-4*a*c))/(4*a);
         }
         else {
-            x1 = ((-b)-sqrt(delta))/2*a;
-            x2 = ((-b)+sqrt(delta))/2*a;
+            x1 = ((-b)-sqrt(delta))/(2*a);
+            x2 = ((-b)+sqrt(delta))/(2*a);
             p=(-b)/2*a;
             q=(-(b*b-4*a*c))/(4*a);
         }
@@ -169,11 +169,45 @@ void MainWindow::on_kwadrat_oblicz_clicked()
 
 void MainWindow::on_kwadratkan_oblicz_clicked()
 {
-    /*double a=ui->kwadratkan_a->text().toDouble();
+    double a=ui->kwadratkan_a->text().toDouble();
     double p=ui->kwadratkan_p->text().toDouble();
     double q=ui->kwadratkan_q->text().toDouble();
-
-*/
+    double b;
+    double c;
+    double x1;
+    double x2;
+    if (a==0){
+        x1=0;
+        x2=0;
+        p=0;
+        b=0;
+        c=q;
+    }
+    if (p==0){
+        x1=sqrt((-q)/a);
+        x2=(-sqrt((-q)/a));
+        b=0;
+        c=q;
+    }
+    if (q==0){
+        x1=p;
+        x2=p;
+        b=(-2)*p*a;
+        c=a*p*p;
+    }
+    else {
+        b=(-2)*p*a;
+        c=(a*p*p)+q;
+        x1 = p+sqrt((-q)/a);
+        x2 = p-sqrt((-q)/a);
+    }
+    ui->kwadrat_x1->setText(QString::number(x1,'g',7));
+    ui->kwadrat_x2->setText(QString::number(x2,'g',7));
+    ui->kwadrat_b->setText(QString::number(b,'g',7));
+    ui->kwadrat_c->setText(QString::number(c,'g',7));
+    ui->kwadrat_a->setText(QString::number(a,'g',7));
+    ui->kwadratil_a->setText(QString::number(a,'g',7));
+    ui->kwadratkan_p->setText(QString::number(p,'g',7));
 }
 
 void MainWindow::on_kwadratil_oblicz_clicked()
