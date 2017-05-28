@@ -37,6 +37,8 @@ private slots:
 
     void on_kwadratil_oblicz_clicked();
 
+    void on_plot_clicked();
+
 private:
     Ui::MainWindow *ui;
     bool waitForOperand;
