@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #define SIZE 400
+#include <iostream>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -224,6 +225,9 @@ void MainWindow::on_kwadratil_oblicz_clicked()
 
 void MainWindow::on_plot_clicked()
 {
+    double a=ui->a_wykres->text().toDouble();
+    double b=ui->b_wykres->text().toDouble();
+    double c=ui->c_wykres->text().toDouble();
     QImage obrazek=QImage(400,300,QImage::Format_RGB32);
     obrazek.fill(qRgb(150,150,250));
 
@@ -232,7 +236,20 @@ void MainWindow::on_plot_clicked()
     painter.drawLine(QPoint (0,150),QPoint (400,150));
     painter.drawLine(QPoint (200,0),QPoint (200,300));
 
+
     painter.setPen(QColor(50,255,50));
+    int x[400], y[400];
+    for(int i=0;i<400; i++){
+
+        x[i]=i-obrazek.width()/2;
+        y[i]=(a*x[i]*x[i]+b*x[i]+c);
+    }
+
+    for(int i=0;i<obrazek.width()-1; i++){
+
+        painter.drawLine(QPoint(x[i]+obrazek.width()/2,-y[i]+obrazek.height()/2),QPoint(x[i+1]+obrazek.width()/2,-y[i+1]+obrazek.height()/2));
+    }
+
 
     QGraphicsScene *scena = new QGraphicsScene();
     QPixmap pix=QPixmap::fromImage(obrazek);
