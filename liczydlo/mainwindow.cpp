@@ -165,6 +165,7 @@ void MainWindow::on_kwadrat_oblicz_clicked()
     ui->kwadratkan_q->setText(QString::number(q,'g',7));
     ui->kwadratkan_a->setText(QString::number(a,'g',7));
     ui->kwadratil_a->setText(QString::number(a,'g',7));
+    ui->kwadrat_del->setText(QString::number(delta,'g',7));
 }
 
 void MainWindow::on_kwadratkan_oblicz_clicked()
@@ -176,30 +177,35 @@ void MainWindow::on_kwadratkan_oblicz_clicked()
     double c;
     double x1;
     double x2;
+    double delta;
     if (a==0){
         x1=0;
         x2=0;
         p=0;
         b=0;
         c=q;
+        delta=0;
     }
     if (p==0){
         x1=sqrt((-q)/a);
         x2=(-sqrt((-q)/a));
         b=0;
         c=q;
+        delta=(-4*a*c);
     }
     if (q==0){
         x1=p;
         x2=p;
         b=(-2)*p*a;
         c=a*p*p;
+        delta=b*b;
     }
     else {
-        b=(-2)*p*a;
+        b=2*p*a;
         c=(a*p*p)+q;
         x1 = p+sqrt((-q)/a);
         x2 = p-sqrt((-q)/a);
+        delta=b*b-(4*a*c);
     }
     ui->kwadrat_x1->setText(QString::number(x1,'g',7));
     ui->kwadrat_x2->setText(QString::number(x2,'g',7));
@@ -208,6 +214,7 @@ void MainWindow::on_kwadratkan_oblicz_clicked()
     ui->kwadrat_a->setText(QString::number(a,'g',7));
     ui->kwadratil_a->setText(QString::number(a,'g',7));
     ui->kwadratkan_p->setText(QString::number(p,'g',7));
+    ui->kwadrat_del->setText(QString::number(delta,'g',7));
 }
 
 void MainWindow::on_kwadratil_oblicz_clicked()
