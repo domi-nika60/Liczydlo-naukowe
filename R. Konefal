@@ -22,8 +22,12 @@
 	- dodanie działania + i =
 	- dalsza nauka qt
 24.05.2017:
-	- przygotowanie do wykonania swojej części w czasie trwania tego sprintu - rysowanie wykresów funkcji.
+	- przygotowanie do wykonania swojej części w czasie trwania tego sprintu - rysowanie 	wykresów funkcji.
 	- stworzenie programu testowego wyświetlającego wykres funkcji y=x^2.
 25.05.2017:
-	- dodanie nowego taba do kalkulatora (stworzenie odpowiednich okien, wygląd graficzny)
+	- dodanie nowego taba do kalkulatora (stworzenie odpowiednich okien, wygląd 	graficzny)
 	- nauka Qt - rysowanie wykresów.
+28.05.2017:
+	- dodanie do projektu okna graficznego służącego do wyświetlania wykresów
+	- dodanie lini będącymi osiami układu współrzędnych.
+	- opracowywanie koncepcji rysowania wykresów.
