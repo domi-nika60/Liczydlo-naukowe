@@ -60,7 +60,7 @@
      </sizepolicy>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <property name="movable">
      <bool>false</bool>
@@ -978,6 +978,11 @@
        <string>Rysuj</string>
       </property>
      </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Strona</string>
+     </attribute>
     </widget>
    </widget>
   </widget>
