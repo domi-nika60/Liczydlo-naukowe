@@ -24,12 +24,12 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->pushButton_7, SIGNAL(released()), this, SLOT(digit_pressed()));
     connect(ui->pushButton_8, SIGNAL(released()), this, SLOT(digit_pressed()));
     connect(ui->pushButton_9, SIGNAL(released()), this, SLOT(digit_pressed()));
-    /*
-    connect(ui->add, SIGNAL(released()), this, SLOT(binary_operator()));
-    connect(ui->subtract, SIGNAL(released()), this, SLOT(binary_operator()));
-    connect(ui->multiply, SIGNAL(released()), this, SLOT(binary_operator()));
-    connect(ui->divide, SIGNAL(released()), this, SLOT(binary_operator()));
-    */
+
+    connect(ui->pushButton_addition, SIGNAL(released()), this, SLOT(binary_operator()));
+    connect(ui->pushButton_subtraction, SIGNAL(released()), this, SLOT(binary_operator()));
+    connect(ui->pushButton_multiplication, SIGNAL(released()), this, SLOT(binary_operator()));
+    connect(ui->pushButton_division, SIGNAL(released()), this, SLOT(binary_operator()));
+    connect(ui->pushButton_equals, SIGNAL(released()), this, SLOT(equals()));
     //=========================================================================
 }
 
@@ -325,17 +325,18 @@ void MainWindow::on_plot_clicked()
     this->ui->graphicsView->show();
 }
 
+//tab - uproszczony
+//=========================================================================
 void MainWindow::digit_pressed()
 {
-    /*QPushButton * button = (QPushButton*) sender();
+    QPushButton * button = (QPushButton*) sender();
 
-    e += (ui->label->text() + button->text());
-    ui->label->setText(e.display());*/
+    e += (ui->label_scr_4->text() + button->text());
+    ui->label_scr_4->setText(e.display());
 }
 
 void MainWindow::binary_operator()
 {
-    /*
     QPushButton * button = (QPushButton*) sender();
     if (button->text() == "+")
         e.binary('+');
@@ -347,14 +348,11 @@ void MainWindow::binary_operator()
         e.binary('/');
 
 
-    ui->label->setText(0);
-    */
+    ui->label_scr_4->setText(0);
 }
 
 void MainWindow::equals()
 {
-    /*
-    ui->label->setText(QString::number(e.result(), 'g', 15));
-    */
+    ui->label_scr_4->setText(QString::number(e.result(), 'g', 15));
 }
-
+//=========================================================================
