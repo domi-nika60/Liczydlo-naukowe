@@ -1045,15 +1045,27 @@
      <widget class="QWidget" name="gridLayoutWidget_3">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>20</x>
         <y>90</y>
-        <width>371</width>
-        <height>271</height>
+        <width>351</width>
+        <height>261</height>
        </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
       </property>
       <layout class="QGridLayout" name="gridLayout_4">
        <item row="2" column="1">
         <widget class="QPushButton" name="pushButton_5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>5</string>
          </property>
@@ -1061,6 +1073,12 @@
        </item>
        <item row="0" column="1">
         <widget class="QPushButton" name="pushButton_clear">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>C</string>
          </property>
@@ -1068,6 +1086,12 @@
        </item>
        <item row="3" column="0">
         <widget class="QPushButton" name="pushButton_1">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>1</string>
          </property>
@@ -1075,6 +1099,12 @@
        </item>
        <item row="0" column="0">
         <widget class="QPushButton" name="pushButton_clearall">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>CA</string>
          </property>
@@ -1082,6 +1112,12 @@
        </item>
        <item row="1" column="0">
         <widget class="QPushButton" name="pushButton_7">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>7</string>
          </property>
@@ -1089,6 +1125,12 @@
        </item>
        <item row="1" column="2">
         <widget class="QPushButton" name="pushButton_9">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>9</string>
          </property>
@@ -1096,6 +1138,12 @@
        </item>
        <item row="3" column="2">
         <widget class="QPushButton" name="pushButton_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>3</string>
          </property>
@@ -1103,6 +1151,12 @@
        </item>
        <item row="2" column="0">
         <widget class="QPushButton" name="pushButton_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>4</string>
          </property>
@@ -1110,6 +1164,12 @@
        </item>
        <item row="2" column="2">
         <widget class="QPushButton" name="pushButton_6">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>6</string>
          </property>
@@ -1117,6 +1177,12 @@
        </item>
        <item row="1" column="1">
         <widget class="QPushButton" name="pushButton_8">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>8</string>
          </property>
@@ -1124,6 +1190,12 @@
        </item>
        <item row="0" column="2">
         <widget class="QPushButton" name="pushButton_backspace">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>&lt;-</string>
          </property>
@@ -1131,6 +1203,12 @@
        </item>
        <item row="3" column="1">
         <widget class="QPushButton" name="pushButton_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>2</string>
          </property>
@@ -1138,6 +1216,12 @@
        </item>
        <item row="0" column="3">
         <widget class="QPushButton" name="pushButton_division">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>/</string>
          </property>
@@ -1145,6 +1229,12 @@
        </item>
        <item row="1" column="3">
         <widget class="QPushButton" name="pushButton_multiplication">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>*</string>
          </property>
@@ -1152,6 +1242,12 @@
        </item>
        <item row="2" column="3">
         <widget class="QPushButton" name="pushButton_subtraction">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>-</string>
          </property>
@@ -1159,6 +1255,12 @@
        </item>
        <item row="3" column="3">
         <widget class="QPushButton" name="pushButton_addition">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>+</string>
          </property>
@@ -1166,6 +1268,12 @@
        </item>
        <item row="4" column="3">
         <widget class="QPushButton" name="pushButton_equals">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>=</string>
          </property>
@@ -1173,6 +1281,12 @@
        </item>
        <item row="4" column="2">
         <widget class="QPushButton" name="pushButton_decimal">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>.</string>
          </property>
@@ -1180,6 +1294,12 @@
        </item>
        <item row="4" column="0" colspan="2">
         <widget class="QPushButton" name="pushButton_0">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
          <property name="text">
           <string>0</string>
          </property>
@@ -1190,10 +1310,10 @@
      <widget class="QLabel" name="label_scr_4">
       <property name="geometry">
        <rect>
-        <x>50</x>
-        <y>20</y>
-        <width>291</width>
-        <height>51</height>
+        <x>20</x>
+        <y>0</y>
+        <width>351</width>
+        <height>81</height>
        </rect>
       </property>
       <property name="styleSheet">
