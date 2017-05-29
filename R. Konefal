@@ -35,3 +35,7 @@
 	- rysowanie wykresów funkcji kwadratowych
 	- zmiana koloru tła wykresu 
 	- opracowywanie koncepcji skalowania wykresów
+30.05.2017:
+	- dodanie możliwości rysowania wykresów wielomianów stopnia 3
+	- skalowanie wykresu 
+	- pomysł stworzenia opcji zapisu wykresów do pliku
