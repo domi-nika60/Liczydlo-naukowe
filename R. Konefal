@@ -31,3 +31,7 @@
 	- dodanie do projektu okna graficznego służącego do wyświetlania wykresów
 	- dodanie lini będącymi osiami układu współrzędnych.
 	- opracowywanie koncepcji rysowania wykresów.
+29.05.2017:
+	- rysowanie wykresów funkcji kwadratowych
+	- zmiana koloru tła wykresu 
+	- opracowywanie koncepcji skalowania wykresów
