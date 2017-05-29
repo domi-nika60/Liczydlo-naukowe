@@ -1109,6 +1109,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
          <property name="text">
           <string>1</string>
          </property>
+         <property name="shortcut">
+          <string>1</string>
+         </property>
         </widget>
        </item>
        <item row="0" column="0">
@@ -1162,6 +1165,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
          <property name="text">
           <string>9</string>
          </property>
+         <property name="shortcut">
+          <string>9</string>
+         </property>
         </widget>
        </item>
        <item row="3" column="2">
@@ -1180,6 +1186,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
 }</string>
          </property>
          <property name="text">
+          <string>3</string>
+         </property>
+         <property name="shortcut">
           <string>3</string>
          </property>
         </widget>
@@ -1202,6 +1211,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
          <property name="text">
           <string>4</string>
          </property>
+         <property name="shortcut">
+          <string>4</string>
+         </property>
         </widget>
        </item>
        <item row="2" column="2">
@@ -1220,6 +1232,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
 }</string>
          </property>
          <property name="text">
+          <string>6</string>
+         </property>
+         <property name="shortcut">
           <string>6</string>
          </property>
         </widget>
@@ -1242,6 +1257,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
          <property name="text">
           <string>8</string>
          </property>
+         <property name="shortcut">
+          <string>8</string>
+         </property>
         </widget>
        </item>
        <item row="0" column="2">
@@ -1254,6 +1272,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
          </property>
          <property name="text">
           <string>&lt;-</string>
+         </property>
+         <property name="shortcut">
+          <string>Backspace</string>
          </property>
         </widget>
        </item>
@@ -1275,6 +1296,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
          <property name="text">
           <string>2</string>
          </property>
+         <property name="shortcut">
+          <string>2</string>
+         </property>
         </widget>
        </item>
        <item row="0" column="3">
@@ -1286,6 +1310,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
           </sizepolicy>
          </property>
          <property name="text">
+          <string>/</string>
+         </property>
+         <property name="shortcut">
           <string>/</string>
          </property>
         </widget>
@@ -1301,6 +1328,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
          <property name="text">
           <string>*</string>
          </property>
+         <property name="shortcut">
+          <string>*</string>
+         </property>
         </widget>
        </item>
        <item row="2" column="3">
@@ -1312,6 +1342,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
           </sizepolicy>
          </property>
          <property name="text">
+          <string>-</string>
+         </property>
+         <property name="shortcut">
           <string>-</string>
          </property>
         </widget>
@@ -1327,6 +1360,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
          <property name="text">
           <string>+</string>
          </property>
+         <property name="shortcut">
+          <string>+</string>
+         </property>
         </widget>
        </item>
        <item row="4" column="3">
@@ -1340,6 +1376,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
          <property name="text">
           <string>=</string>
          </property>
+         <property name="shortcut">
+          <string>Return</string>
+         </property>
         </widget>
        </item>
        <item row="4" column="2">
@@ -1351,6 +1390,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
           </sizepolicy>
          </property>
          <property name="text">
+          <string>.</string>
+         </property>
+         <property name="shortcut">
           <string>.</string>
          </property>
         </widget>
@@ -1371,6 +1413,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
 }</string>
          </property>
          <property name="text">
+          <string>0</string>
+         </property>
+         <property name="shortcut">
           <string>0</string>
          </property>
         </widget>

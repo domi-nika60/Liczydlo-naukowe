@@ -1,9 +1,11 @@
 #include "expression.h"
+#include <string>
 
 expression::expression()
 : def_operators{'*', '/', '+', '-'}
 {
     answer = 0;
+
 }
 
 expression &expression::operator+=(const QString c)
@@ -14,11 +16,14 @@ expression &expression::operator+=(const QString c)
 
 QString expression::display()
 {
+
     return number;
 }
 
 void expression::binary(char oper)
 {
+    exp += number;
+    exp += QString(oper);
     operators.push_back(oper);
     numbers.push_back(number.toDouble());
     number.clear();
