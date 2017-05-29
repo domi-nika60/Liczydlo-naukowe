@@ -40,6 +40,27 @@
 -dalsza nauka qt
 -rozwiniecie klasy expression
   -dzialania +,-,*,/
-  -kolejnosc wykonywania dzialac (test 2+2*2 zaliczony)
+  -kolejnosc wykonywania dzialan (test 2+2*2 zaliczony)
 -drobne zmiany w interfejsie
+==========================================================
+========================23.05.2017========================
+-dalsza nauka qt
+-rozwiniecie klasy expression
+  -dzialania +,-,*,/
+  -kolejnosc wykonywania dzialan (test 2+2*2 zaliczony)
+-drobne zmiany w interfejsie
+==========================================================
+========================24.05.2017========================
+-dalsza nauka qt
+-testowanie programu
+==========================================================
+========================28.05.2017========================
+-zapoznanie sie z kodem development team'u
+-testowanie programu
+==========================================================
+========================29.05.2017========================
+-implementacja wlasnych rozwiazan do programu
+  -dodanie expression.h, expression.cpp
+  -kolejnosc dzialan
+  -dopasownie, rozwiazenie konfliktow
 ==========================================================
