@@ -2,17 +2,17 @@
 #define expression_H
 
 #include <QString>
-
 #include <vector>
 
 class expression
 { 
-  //QString exp;                              //cale wyrazenie
   QString number;                           //obecnie wczytwana liczba
   std::vector <double> numbers;             //liczby
   std::vector <char> operators;             //operatory
   double answer;                            //wynik poprzedniego
+  QString exp;
   const char def_operators[];               //definuje mozliwe dzialania
+
 public:
   expression();                             //konstruktor
   expression &operator+=(const QString c);  //dodawanie kolejnych, jak w klasie string
