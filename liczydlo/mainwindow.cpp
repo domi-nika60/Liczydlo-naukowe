@@ -235,16 +235,15 @@ void MainWindow::on_plot_clicked()
     painter.setPen(QColor(50,700,50));
     painter.drawLine(QPoint (0,150),QPoint (400,150));
     painter.drawLine(QPoint (200,0),QPoint (200,300));
-
-
     painter.setPen(QColor(50,255,50));
     int x[400], y[400];
     for(int i=0;i<400; i++){
 
         x[i]=i-obrazek.width()/2;
-        y[i]=(a*x[i]*x[i]+b*x[i]+c);
+        float s=x[i];
+        y[i]=(a*s*s+b*s+c)/10;
     }
-
+   // painter.drawEllipse(QPoint (200,150), 100,80);
     for(int i=0;i<obrazek.width()-1; i++){
 
         painter.drawLine(QPoint(x[i]+obrazek.width()/2,-y[i]+obrazek.height()/2),QPoint(x[i+1]+obrazek.width()/2,-y[i+1]+obrazek.height()/2));
