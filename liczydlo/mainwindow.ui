@@ -60,7 +60,7 @@
      </sizepolicy>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <property name="movable">
      <bool>false</bool>
@@ -882,7 +882,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>= 0</string>
+       <string>) = 0</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_20">
