@@ -11,7 +11,7 @@ class expression
   std::vector <char> operators;             //operatory
   double answer;                            //wynik poprzedniego
   QString exp;                              //cale wyrazenie
-  const char def_operators[];               //definuje mozliwe dzialania
+  const char def_operators[4];               //definuje mozliwe dzialania
 
 public:
   expression();                             //konstruktor
