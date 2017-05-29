@@ -296,6 +296,7 @@ void MainWindow::on_plot_clicked()
     double a=ui->a_wykres->text().toDouble();
     double b=ui->b_wykres->text().toDouble();
     double c=ui->c_wykres->text().toDouble();
+    double d=ui->d_wykres->text().toDouble();
     QImage obrazek=QImage(400,300,QImage::Format_RGB32);
     obrazek.fill(qRgb(150,150,250));
 
@@ -303,13 +304,20 @@ void MainWindow::on_plot_clicked()
     painter.setPen(QColor(50,700,50));
     painter.drawLine(QPoint (0,150),QPoint (400,150));
     painter.drawLine(QPoint (200,0),QPoint (200,300));
+    for(int i=0;i<40;i++){
+      painter.drawLine(QPoint (10+10*i,147),QPoint (10+10*i,153));
+    }
+    for(int i=0;i<30;i++){
+        painter.drawLine(QPoint (197,10+10*i),QPoint (203,10+10*i));
+    }
+
     painter.setPen(QColor(50,255,50));
     int x[400], y[400];
     for(int i=0;i<400; i++){
 
         x[i]=i-obrazek.width()/2;
-        float s=x[i];
-        y[i]=(a*s*s+b*s+c)/10;
+        float s=x[i]/10.0;
+        y[i]=(a*s*s*s+b*s*s+c*s+d)*10;
     }
    // painter.drawEllipse(QPoint (200,150), 100,80);
     for(int i=0;i<obrazek.width()-1; i++){
