@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
     sum=0;
     operation=0;
-    //tab - uproszczony
+    //tab 4 - uproszczony
     //=========================================================================
     connect(ui->pushButton_0, SIGNAL(released()), this, SLOT(digit_pressed()));
     connect(ui->pushButton_1, SIGNAL(released()), this, SLOT(digit_pressed()));

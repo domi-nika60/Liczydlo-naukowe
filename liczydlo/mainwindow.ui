@@ -1128,6 +1128,9 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
          <property name="text">
           <string>CA</string>
          </property>
+         <property name="shortcut">
+          <string>Del</string>
+         </property>
         </widget>
        </item>
        <item row="1" column="0">
@@ -1439,6 +1442,7 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
+font: 75 italic 12pt &quot;Noto Sans&quot;;
 qproperty-alignment: 'AlignVCenter | AlignRight';
 border: 1px solid gray;
 background: white;

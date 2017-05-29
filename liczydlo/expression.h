@@ -10,7 +10,7 @@ class expression
   std::vector <double> numbers;             //liczby
   std::vector <char> operators;             //operatory
   double answer;                            //wynik poprzedniego
-  QString exp;
+  QString exp;                              //cale wyrazenie
   const char def_operators[];               //definuje mozliwe dzialania
 
 public:
