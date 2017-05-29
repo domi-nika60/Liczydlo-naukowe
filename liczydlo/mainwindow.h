@@ -4,6 +4,8 @@
 #include <QMainWindow>
 #include <math.h>
 
+#include "expression.h"
+
 namespace Ui {
 class MainWindow;
 }
@@ -38,6 +40,13 @@ private slots:
     void on_kwadratil_oblicz_clicked();
 
     void on_plot_clicked();
+
+    //tab - uproszczony
+    //==========================================================
+    void digit_pressed();
+    void binary_operator();
+    void equals();
+    //==========================================================
 
 private:
     Ui::MainWindow *ui;
