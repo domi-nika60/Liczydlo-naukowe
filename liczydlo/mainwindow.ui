@@ -59,8 +59,11 @@
       <verstretch>0</verstretch>
      </sizepolicy>
     </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;wykres&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>2</number>
     </property>
     <property name="movable">
      <bool>false</bool>
@@ -942,6 +945,9 @@
      </widget>
     </widget>
     <widget class="QWidget" name="Wykres">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;wykres&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
      <attribute name="title">
       <string>Strona</string>
      </attribute>
@@ -969,7 +975,7 @@
       <property name="geometry">
        <rect>
         <x>310</x>
-        <y>10</y>
+        <y>30</y>
         <width>75</width>
         <height>23</height>
        </rect>
@@ -1001,7 +1007,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>x^2+</string>
+       <string>x^3+</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="b_wykres">
@@ -1019,20 +1025,43 @@
        <rect>
         <x>150</x>
         <y>10</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>x^2+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="c_wykres">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>10</y>
+        <width>31</width>
+        <height>21</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>10</y>
         <width>21</width>
-        <height>16</height>
+        <height>21</height>
        </rect>
       </property>
       <property name="text">
        <string>x+</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="c_wykres">
+     <widget class="QLineEdit" name="d_wykres">
       <property name="geometry">
        <rect>
-        <x>170</x>
+        <x>240</x>
         <y>10</y>
-        <width>31</width>
+        <width>41</width>
         <height>20</height>
        </rect>
       </property>
