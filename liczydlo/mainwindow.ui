@@ -63,7 +63,7 @@
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;wykres&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>4</number>
     </property>
     <property name="movable">
      <bool>false</bool>
@@ -1559,6 +1559,138 @@ background: white;
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>systemy</string>
+     </attribute>
+     <widget class="QLineEdit" name="sys_10">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>60</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="type" stdset="0">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sys_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>100</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="type" stdset="0">
+       <number>2</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sys_8">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>140</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="type" stdset="0">
+       <number>8</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sys_16">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>190</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="type" stdset="0">
+       <number>16</number>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="system_custom_podst">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>260</y>
+        <width>21</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="sys_custom">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>240</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="type" stdset="0">
+       <number>0</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>80</y>
+        <width>59</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>10</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>120</y>
+        <width>59</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>160</y>
+        <width>59</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_30">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>210</y>
+        <width>59</width>
+        <height>14</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>16</string>
+      </property>
+     </widget>
+    </widget>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
@@ -1584,8 +1716,8 @@ background: white;
    <slot>digit_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>136</x>
-     <y>358</y>
+     <x>126</x>
+     <y>367</y>
     </hint>
     <hint type="destinationlabel">
      <x>128</x>
@@ -1600,8 +1732,8 @@ background: white;
    <slot>two_argument_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>309</x>
-     <y>180</y>
+     <x>306</x>
+     <y>187</y>
     </hint>
     <hint type="destinationlabel">
      <x>489</x>
@@ -1632,8 +1764,8 @@ background: white;
    <slot>two_argument_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>326</x>
-     <y>239</y>
+     <x>306</x>
+     <y>247</y>
     </hint>
     <hint type="destinationlabel">
      <x>509</x>
@@ -1680,8 +1812,8 @@ background: white;
    <slot>digit_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>243</x>
-     <y>313</y>
+     <x>246</x>
+     <y>307</y>
     </hint>
     <hint type="destinationlabel">
      <x>345</x>
@@ -1696,8 +1828,8 @@ background: white;
    <slot>digit_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>192</x>
-     <y>185</y>
+     <x>186</x>
+     <y>187</y>
     </hint>
     <hint type="destinationlabel">
      <x>126</x>
@@ -1712,8 +1844,8 @@ background: white;
    <slot>digit_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>265</x>
-     <y>183</y>
+     <x>246</x>
+     <y>187</y>
     </hint>
     <hint type="destinationlabel">
      <x>290</x>
@@ -1728,8 +1860,8 @@ background: white;
    <slot>digit_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>262</x>
-     <y>250</y>
+     <x>246</x>
+     <y>247</y>
     </hint>
     <hint type="destinationlabel">
      <x>230</x>
@@ -1744,8 +1876,8 @@ background: white;
    <slot>digit_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>128</x>
-     <y>296</y>
+     <x>126</x>
+     <y>307</y>
     </hint>
     <hint type="destinationlabel">
      <x>122</x>
@@ -1776,8 +1908,8 @@ background: white;
    <slot>two_argument_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>327</x>
-     <y>291</y>
+     <x>306</x>
+     <y>307</y>
     </hint>
     <hint type="destinationlabel">
      <x>504</x>
@@ -1792,8 +1924,8 @@ background: white;
    <slot>two_argument_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>379</x>
-     <y>354</y>
+     <x>366</x>
+     <y>367</y>
     </hint>
     <hint type="destinationlabel">
      <x>459</x>
@@ -1808,8 +1940,8 @@ background: white;
    <slot>two_argument_clicked()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>327</x>
-     <y>352</y>
+     <x>306</x>
+     <y>367</y>
     </hint>
     <hint type="destinationlabel">
      <x>509</x>

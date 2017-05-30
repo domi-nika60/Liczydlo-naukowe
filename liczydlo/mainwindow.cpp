@@ -31,6 +31,14 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->pushButton_division, SIGNAL(released()), this, SLOT(binary_operator()));
     connect(ui->pushButton_equals, SIGNAL(released()), this, SLOT(equals()));
     //=========================================================================
+
+    //zmiana systemów liczbowych
+    connect(ui->sys_2, SIGNAL(textEdited(QString)), this, SLOT(change_system()));
+    connect(ui->sys_10, SIGNAL(textEdited(QString)), this, SLOT(change_system()));
+    connect(ui->sys_8, SIGNAL(textEdited(QString)), this, SLOT(change_system()));
+    connect(ui->sys_16, SIGNAL(textEdited(QString)), this, SLOT(change_system()));
+    connect(ui->sys_custom, SIGNAL(textEdited(QString)), this, SLOT(change_system()));
+
 }
 
 MainWindow::~MainWindow()
@@ -364,3 +372,10 @@ void MainWindow::equals()
     ui->label_scr_4->setText(QString::number(e.result(), 'g', 15));
 }
 //=========================================================================
+
+
+//zmiana systemów binarych
+
+void MainWindow::change_system(){
+
+}

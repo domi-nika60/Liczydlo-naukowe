@@ -41,6 +41,9 @@ private slots:
 
     void on_plot_clicked();
 
+    //zmiana systemów liczbowych
+    void change_system();
+
     //tab - uproszczony
     //==========================================================
     void digit_pressed();
