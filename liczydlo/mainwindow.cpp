@@ -406,7 +406,7 @@ void MainWindow::decimal()
 //zmiana systemów binarych
 
 QString to_custom(long long liczba, int baza){
-    if(baza==0)
+    if(baza<2)
         return "NaN";
     if(baza==10)
         return QString::number(liczba);
