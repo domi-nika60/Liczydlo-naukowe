@@ -386,6 +386,7 @@ void MainWindow::clear_all()
 void MainWindow::clear()
 {
     e.clear();
+    ui->label_scr_4->setText(e.display());
 }
 void MainWindow::backspace()
 {

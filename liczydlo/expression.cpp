@@ -40,46 +40,51 @@ double expression::result()
     numbers.push_back(number.toDouble());
     number.clear();
     char oper;
+    if (operators.size() > numbers.size()/2)
+        operators.pop_back();
 
-       for (unsigned int i = 0; i < operators.size() && !operators.empty(); ++i)
-       {
-           oper = operators[i];
-           if (oper == '*')
-           {
-               numbers[i] *= numbers[i+1];
-               numbers.erase(numbers.begin()+i+1);
-               operators.erase(operators.begin()+i);
-               i--;
-           }
-           else if (oper == '/')
-           {
-               if (numbers[i+1] == 0.0)
-                   exit(4);
-               numbers[i] /= numbers[i+1];
-               numbers.erase(numbers.begin()+i+1);
-               operators.erase(operators.begin()+i);
-               i--;
-           }
-       }
+    for (unsigned int i = 0; i < operators.size() && !operators.empty(); ++i)
+    {
+        oper = operators[i];
+        if (oper == '*')
+        {
+            numbers[i] *= numbers[i+1];
+            numbers.erase(numbers.begin()+i+1);
+            operators.erase(operators.begin()+i);
+            i--;
+        }
+        else if (oper == '/')
+        {
+            if (numbers[i+1] == 0.0)
+                exit(4);
+            numbers[i] /= numbers[i+1];
+            numbers.erase(numbers.begin()+i+1);
+            operators.erase(operators.begin()+i);
+            i--;
+        }
 
-       for (unsigned int i = 0; i < operators.size() && !operators.empty(); ++i)
-       {
-           oper = operators[i];
-           if (oper == '+')
-           {
-               numbers[i] += numbers[i+1];
-               numbers.erase(numbers.begin()+i+1);
-               operators.erase(operators.begin()+i);
-               i--;
-           }
-           else if (oper == '-')
-           {
-               numbers[i] -= numbers[i+1];
-               numbers.erase(numbers.begin()+i+1);
-               operators.erase(operators.begin()+i);
-               i--;
-           }
-       }
+    }
+
+    for (unsigned int i = 0; i < operators.size() && !operators.empty(); ++i)
+    {
+        oper = operators[i];
+        if (oper == '+')
+        {
+            numbers[i] += numbers[i+1];
+            numbers.erase(numbers.begin()+i+1);
+            operators.erase(operators.begin()+i);
+            i--;
+        }
+        else if (oper == '-')
+        {
+            numbers[i] -= numbers[i+1];
+            numbers.erase(numbers.begin()+i+1);
+            operators.erase(operators.begin()+i);
+            i--;
+        }
+    }
+
+
 
     answer = numbers [0];
     numbers.clear();
