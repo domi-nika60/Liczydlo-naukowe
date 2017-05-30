@@ -14,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent) :
     operation=0;
     //tab 4 - uproszczony
     //=========================================================================
+    //numbers
     connect(ui->pushButton_0, SIGNAL(released()), this, SLOT(digit_pressed()));
     connect(ui->pushButton_1, SIGNAL(released()), this, SLOT(digit_pressed()));
     connect(ui->pushButton_2, SIGNAL(released()), this, SLOT(digit_pressed()));
@@ -24,12 +25,16 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->pushButton_7, SIGNAL(released()), this, SLOT(digit_pressed()));
     connect(ui->pushButton_8, SIGNAL(released()), this, SLOT(digit_pressed()));
     connect(ui->pushButton_9, SIGNAL(released()), this, SLOT(digit_pressed()));
-
+    //binary operators
     connect(ui->pushButton_addition, SIGNAL(released()), this, SLOT(binary_operator()));
     connect(ui->pushButton_subtraction, SIGNAL(released()), this, SLOT(binary_operator()));
     connect(ui->pushButton_multiplication, SIGNAL(released()), this, SLOT(binary_operator()));
     connect(ui->pushButton_division, SIGNAL(released()), this, SLOT(binary_operator()));
     connect(ui->pushButton_equals, SIGNAL(released()), this, SLOT(equals()));
+    //ca,c, <-
+    connect(ui->pushButton_clear, SIGNAL(released()), this, SLOT(clear()));
+    connect(ui->pushButton_clearall, SIGNAL(released()), this, SLOT(clear_all()));
+    connect(ui->pushButton_backspace, SIGNAL(released()), this, SLOT(backspace()));
     //=========================================================================
 
     //zmiana systemów liczbowych
@@ -372,6 +377,21 @@ void MainWindow::equals()
 {
     ui->label_scr_4->setText(QString::number(e.result(), 'g', 15));
 }
+void MainWindow::clear_all()
+{
+    e.clear_all();
+    ui->label_scr_4->setText(0);
+}
+
+void MainWindow::clear()
+{
+    e.clear();
+}
+void MainWindow::backspace()
+{
+    e.backspace();
+}
+
 //=========================================================================
 
 

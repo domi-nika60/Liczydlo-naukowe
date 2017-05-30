@@ -28,6 +28,9 @@ public:
   QString display();                        //zwraca cale wyrazenie
   double result();                          //liczenie wartosci
   void binary(char oper);                   //operatory przyjmujace 2 arg
+  void clear_all();                         //czysci obecne dzialanie
+  void clear();                             //usuwa obecnie wpisywana liczbe
+  void backspace();                         //usuwa ostatni wprowadzony znak
 };
 
 #endif

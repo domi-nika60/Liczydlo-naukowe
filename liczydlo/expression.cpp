@@ -11,9 +11,7 @@ expression::expression()
 
 expression &expression::operator+=(const QString c)
 {
-    //QString pomoc = number + c;
     number = QString::number((number+c).toDouble(), 'g', 15);
-
     return *this;
 }
 
@@ -88,4 +86,25 @@ double expression::result()
     log.push_back(exp + QString("=") + answer);
     exp.clear();
     return answer;
+}
+
+void expression::clear_all()
+{
+    exp.clear();
+    numbers.clear();
+    operators.clear();
+    number.clear();
+}
+
+void expression::clear()
+{
+
+}
+
+void expression::backspace()
+{
+    if(!number.isEmpty())
+    {
+
+    }
 }

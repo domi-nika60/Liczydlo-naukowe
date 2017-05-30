@@ -49,6 +49,9 @@ private slots:
     void digit_pressed();
     void binary_operator();
     void equals();
+    void clear_all();
+    void clear();
+    void backspace();
     //==========================================================
 
 private:
