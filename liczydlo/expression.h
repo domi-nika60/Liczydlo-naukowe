@@ -31,6 +31,7 @@ public:
   void clear_all();                         //czysci obecne dzialanie
   void clear();                             //usuwa obecnie wpisywana liczbe
   void backspace();                         //usuwa ostatni wprowadzony znak
+  void decimal();                           //kropka badz przecinek
 };
 
 #endif

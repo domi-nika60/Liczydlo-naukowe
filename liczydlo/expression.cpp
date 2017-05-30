@@ -110,7 +110,7 @@ void expression::clear()
     }
     else
     {
-        //usun operator?
+        //operators.pop_back();
     }
 }
 
@@ -120,4 +120,11 @@ void expression::backspace()
     {
         number.chop(1);
     }
+}
+
+void expression::decimal()
+{
+    if (!number.isEmpty())
+        if (!number.contains(".", Qt::CaseInsensitive))
+            number+=".";
 }
