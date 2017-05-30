@@ -35,12 +35,13 @@ void expression::binary(char oper)
     }
 }
 
-double expression::result()
+QString expression::result()
 {
     numbers.push_back(number.toDouble());
+    exp += number;
     number.clear();
     char oper;
-    if (operators.size() > numbers.size()/2)
+    if (operators.size() >= numbers.size())
         operators.pop_back();
 
     for (unsigned int i = 0; i < operators.size() && !operators.empty(); ++i)
@@ -88,9 +89,9 @@ double expression::result()
 
     answer = numbers [0];
     numbers.clear();
-    log.push_back(exp + QString("=") + answer);
+    log.push_back(exp + QString("=") + QString::number(answer, 'g', 15));
     exp.clear();
-    return answer;
+    return log.back();
 }
 
 void expression::clear_all()
@@ -110,7 +111,7 @@ void expression::clear()
     }
     else
     {
-        //usun operator?
+        //operators.pop_back();
     }
 }
 
@@ -120,4 +121,11 @@ void expression::backspace()
     {
         number.chop(1);
     }
+}
+
+void expression::decimal()
+{
+    if (!number.isEmpty())
+        if (!number.contains(".", Qt::CaseInsensitive))
+            number+=".";
 }

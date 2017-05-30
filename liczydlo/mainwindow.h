@@ -53,6 +53,7 @@ private slots:
     void clear_all();
     void clear();
     void backspace();
+    void decimal();
     //==========================================================
 
 private:

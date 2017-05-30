@@ -35,6 +35,8 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->pushButton_clear, SIGNAL(released()), this, SLOT(clear()));
     connect(ui->pushButton_clearall, SIGNAL(released()), this, SLOT(clear_all()));
     connect(ui->pushButton_backspace, SIGNAL(released()), this, SLOT(backspace()));
+    //decimal
+    connect(ui->pushButton_decimal, SIGNAL(released()), this, SLOT(decimal()));
     //=========================================================================
 
     //zmiana systemów liczbowych
@@ -375,7 +377,7 @@ void MainWindow::binary_operator()
 
 void MainWindow::equals()
 {
-    ui->label_scr_4->setText(QString::number(e.result(), 'g', 15));
+    ui->label_scr_4->setText(e.result());
 }
 void MainWindow::clear_all()
 {
@@ -393,7 +395,11 @@ void MainWindow::backspace()
     e.backspace();
     ui->label_scr_4->setText(e.display());
 }
-
+void MainWindow::decimal()
+{
+    e.decimal();
+    ui->label_scr_4->setText(e.display());
+}
 //=========================================================================
 
 
