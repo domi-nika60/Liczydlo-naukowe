@@ -377,7 +377,7 @@ void MainWindow::binary_operator()
 
 void MainWindow::equals()
 {
-    ui->label_scr_4->setText(QString::number(e.result(), 'g', 15));
+    ui->label_scr_4->setText(e.result());
 }
 void MainWindow::clear_all()
 {

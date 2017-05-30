@@ -1548,7 +1548,7 @@ QPushButton:pressed { background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2:
       </property>
       <property name="styleSheet">
        <string notr="true">QLabel {
-font: 75 italic 12pt &quot;Noto Sans&quot;;
+font: 75 italic 14pt &quot;Noto Sans&quot;;
 qproperty-alignment: 'AlignVCenter | AlignRight';
 border: 1px solid gray;
 background: white;

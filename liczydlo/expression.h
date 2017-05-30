@@ -26,7 +26,7 @@ public:
   expression();                             //konstruktor
   expression &operator+=(const QString c);  //dodawanie kolejnych, jak w klasie string
   QString display();                        //zwraca cale wyrazenie
-  double result();                          //liczenie wartosci
+  QString result();                          //liczenie wartosci
   void binary(char oper);                   //operatory przyjmujace 2 arg
   void clear_all();                         //czysci obecne dzialanie
   void clear();                             //usuwa obecnie wpisywana liczbe
