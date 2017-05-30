@@ -399,6 +399,83 @@ void MainWindow::backspace()
 
 //zmiana systemów binarych
 
+QString to_custom(long long liczba, int baza){
+    if(baza==0)
+        return "NaN";
+    if(baza==10)
+        return QString::number(liczba);
+    int cyfry[64];
+    QString liczba_gotowa;
+    int i=0;
+
+    while(liczba>0){
+        cyfry[i]=liczba%baza;
+        liczba=(liczba-cyfry[i])/baza;
+        i++;
+    }
+    for(i--;i>=0;i--){
+        QString temp;
+        if(cyfry[i]>=10){
+            switch (cyfry[i]){
+                case 10: temp="A";
+                break;
+                case 11: temp="B";
+                    break;
+                case 12: temp="C";
+                break;
+                case 13:temp="D";
+                break;
+                case 14:temp="E";
+                break;
+                case 15:temp="F";
+                break;
+            }
+            liczba_gotowa+=temp;
+        }else
+         liczba_gotowa+=QString::number(cyfry[i]);
+    }
+    return liczba_gotowa;
+
+
+}
+
+long long to_10(QString string_liczba, int baza){
+    long long liczba=0;
+    int j=0;
+    if(baza==10)
+        return string_liczba.toInt();
+    for(int i=string_liczba.length()-1;i>=0;i--,j++){
+        if(baza>=10){
+            liczba+=string_liczba.mid(i,1).toInt(nullptr, baza)*pow(baza, j);
+        }else
+            liczba+=string_liczba.mid(i,1).toInt()*pow(baza, j);
+    }
+
+    return liczba;
+};
+
 void MainWindow::change_system(){
+    QLineEdit* lineEdit = qobject_cast<QLineEdit*>(sender());
+    int type = lineEdit->property("type").toInt();
+    QString string_liczba = lineEdit->text();
+    long long liczba_10;
+
+    //zamiana wszystkiego na 10
+    if(type==0){
+        liczba_10=to_10(string_liczba, ui->system_custom_podst->text().toLongLong());
+    }else if(type==10){
+        liczba_10=lineEdit->text().toLongLong();
+    }else{
+        liczba_10=to_10(string_liczba, type);
+    }
+
+
+    //wpisanie do okienek
+
+    ui->sys_2->setText(to_custom(liczba_10,2));
+    ui->sys_8->setText(to_custom(liczba_10,8));
+    ui->sys_10->setText(to_custom(liczba_10,10));
+    ui->sys_16->setText(to_custom(liczba_10,16));
+    ui->sys_custom->setText(to_custom(liczba_10,ui->system_custom_podst->text().toInt()));
 
 }

@@ -44,6 +44,7 @@ private slots:
     //zmiana systemów liczbowych
     void change_system();
 
+
     //tab - uproszczony
     //==========================================================
     void digit_pressed();
@@ -60,5 +61,8 @@ private:
     double sum;
     int operation;
 };
+
+QString to_custom(long liczba, int baza);
+long long to_10(QString string_liczba, int baza);
 
 #endif // MAINWINDOW_H
