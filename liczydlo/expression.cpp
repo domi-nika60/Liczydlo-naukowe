@@ -98,13 +98,21 @@ void expression::clear_all()
 
 void expression::clear()
 {
-
+    if (!number.isEmpty())
+    {
+        number.clear();
+        numbers.pop_back();
+    }
+    else
+    {
+        //usun operator?
+    }
 }
 
 void expression::backspace()
 {
     if(!number.isEmpty())
     {
-
+        number.chop(1);
     }
 }
