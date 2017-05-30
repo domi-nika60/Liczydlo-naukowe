@@ -77,5 +77,7 @@ double expression::result()
 
     answer = numbers [0];
     numbers.clear();
+    log.push_back(exp);
+    exp.clear();
     return answer;
 }

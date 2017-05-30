@@ -11,6 +11,7 @@ class expression
   std::vector <char> operators;             //operatory
   double answer;                            //wynik poprzedniego
   QString exp;                              //cale wyrazenie
+  std::vector <QString> log;
   const char def_operators[4];               //definuje mozliwe dzialania
 
 public:
