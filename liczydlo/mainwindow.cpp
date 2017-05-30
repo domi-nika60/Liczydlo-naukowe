@@ -354,6 +354,7 @@ void MainWindow::digit_pressed()
 void MainWindow::binary_operator()
 {
     QPushButton * button = (QPushButton*) sender();
+
     if (button->text() == "+")
         e.binary('+');
     else if (button->text() == "-")

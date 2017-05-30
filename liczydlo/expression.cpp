@@ -11,8 +11,8 @@ expression::expression()
 
 expression &expression::operator+=(const QString c)
 {
-    QString pomoc = number + c;
-    number = QString::number(pomoc.toDouble(), 'g', 15);
+    //QString pomoc = number + c;
+    number = QString::number((number+c).toDouble(), 'g', 15);
 
     return *this;
 }
@@ -27,11 +27,14 @@ QString expression::display()
 
 void expression::binary(char oper)
 {
-    exp += number;
-    exp += QString(oper);
-    operators.push_back(oper);
-    numbers.push_back(number.toDouble());
-    number.clear();
+    if (!number.isEmpty())
+    {
+        exp += number;
+        exp += QString(oper);
+        operators.push_back(oper);
+        numbers.push_back(number.toDouble());
+        number.clear();
+    }
 }
 
 double expression::result()

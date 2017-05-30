@@ -4,6 +4,14 @@
 #include <QString>
 #include <vector>
 
+class record
+{
+    double answer;
+    QString exp;
+public:
+    QString display();
+};
+
 class expression
 { 
   QString number;                           //obecnie wczytwana liczba
