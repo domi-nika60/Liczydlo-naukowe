@@ -5,19 +5,24 @@ expression::expression()
 : def_operators{'*', '/', '+', '-'}
 {
     answer = 0;
+    exp.clear();
 
 }
 
 expression &expression::operator+=(const QString c)
 {
-    number = QString::number(c.toDouble(), 'g', 15);
+    QString pomoc = number + c;
+    number = QString::number(pomoc.toDouble(), 'g', 15);
+
     return *this;
 }
 
 QString expression::display()
 {
-
-    return number;
+    if (operators.empty())
+        return number;
+    else
+        return exp+number;
 }
 
 void expression::binary(char oper)

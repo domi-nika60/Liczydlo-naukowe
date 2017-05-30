@@ -347,7 +347,7 @@ void MainWindow::digit_pressed()
 {
     QPushButton * button = (QPushButton*) sender();
 
-    e += (ui->label_scr_4->text() + button->text());
+    e += (/*ui->label_scr_4->text() +*/ button->text());
     ui->label_scr_4->setText(e.display());
 }
 
@@ -363,8 +363,8 @@ void MainWindow::binary_operator()
     else if (button->text() == "/")
         e.binary('/');
 
-
-    ui->label_scr_4->setText(0);
+    ui->label_scr_4->setText(e.display());
+    //ui->label_scr_4->setText(0);
 }
 
 void MainWindow::equals()
