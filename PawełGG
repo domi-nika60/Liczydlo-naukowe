@@ -63,4 +63,12 @@
   -dodanie expression.h, expression.cpp
   -kolejnosc dzialan
   -dopasownie, rozwiazenie konfliktow
+-ekperymenty z layoutem programu
+==========================================================
+========================29.05.2017========================
+-tab uproszczony
+  -dodanie kropki, c, ca, backspace
+  -poprawa bledow
+  -od teraz cale dzialanie jest widoczne podczas wpisywania
+-mozliwosc wpisywania cyfr i operatorow z klawiatury
 ==========================================================
