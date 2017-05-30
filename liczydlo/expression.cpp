@@ -77,7 +77,7 @@ double expression::result()
 
     answer = numbers [0];
     numbers.clear();
-    log.push_back(exp);
+    log.push_back(exp + QString("=") + answer);
     exp.clear();
     return answer;
 }
